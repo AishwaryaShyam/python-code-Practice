@@ -1,0 +1,17 @@
+print("Welcome to tip calculator")
+a = float(input("what is the bill? "))
+b = int(input("How much tip would you like to give?10,15,18 "))
+c = int(input("how many people to spit the bill? "))
+d = a * (1 + b/100)/ c
+print(f" each person should pay {d}")
+
+
+For round off 
+
+print("Welcome to tip calculator")
+a = float(input("what is the bill? "))
+b = int(input("How much tip would you like to give?10,15,18 "))
+c = int(input("how many people to spit the bill? "))
+d = a * (1 + b/100)/ c
+e = round(d, 2)
+print(f" each person should pay {e}")
