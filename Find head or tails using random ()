@@ -1,0 +1,8 @@
+import random
+flips = random.randint(1,30)
+print(f" {flips}")
+if flips <= 15:
+    print("heads")
+else:
+    print("tails")
+
