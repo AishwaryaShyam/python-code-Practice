@@ -1,0 +1,5 @@
+a= int(input("choose a number from 1-10.")) 
+if a % 2 == 0:
+    print("even")
+else: 
+    print("odd")
