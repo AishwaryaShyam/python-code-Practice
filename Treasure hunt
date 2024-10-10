@@ -1,0 +1,18 @@
+print("Welcome to Treasure Island.")
+print("Your mission is to find the treasure.")
+start1 = input("please choose left or right to proceed further")
+if start1 == "left" or "Left":    
+#can use a lower() function to convert the input into lowercase 
+    print("you fell on a hole")
+else:
+    print("please proceed further")
+start2 = input("please choose to swim or to wait for a boat")
+if start2 == "swim" or "Swim":
+    print("you drowned, game over")
+else:
+    print ("please proceed further")
+start3 = input("which door you want to open? Blue,Yellow,Red")
+if start3 == "blue" and "red":
+    print ("Game over")
+else:
+    print("you won the game")
