@@ -1,0 +1,30 @@
+import random
+word_list = ["Apple", "orange","grapes"]
+choosen_word = random.choice(word_list):
+lives = 6 
+guess = input(The alphabet you choose is "").lower()
+placeholder = ""
+wordlength = len(choosen_word)
+for n in range(wordlength):
+    placeholder +="_"
+print placeholder
+game_over = False
+correct=[]
+while not game_over:
+    guess = input(The alphabet you choose is "").lower()
+    display = ""
+    for i in choosen_word:
+        if i == guess 
+        display += i 
+        correct.append(guess)
+    elif i in correct:
+        display += i
+    else: 
+    display += _
+    print(display)   
+    if "_" not in display:
+        game_over = True 
+        print("you win")
+        
+    
+        
