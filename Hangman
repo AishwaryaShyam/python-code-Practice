@@ -21,7 +21,12 @@ while not game_over:
         display += i
     else: 
     display += _
-    print(display)   
+    print(display)  
+    if guess not in choosen_word
+        lives -= _
+    if lives == 0 
+        game_over = True 
+        print ("you lose")
     if "_" not in display:
         game_over = True 
         print("you win")
