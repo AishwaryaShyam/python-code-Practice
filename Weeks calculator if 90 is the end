@@ -1,0 +1,6 @@
+def life_in_weeks(age):
+    days = 90 - age
+    X = days * 52
+    print(f"you have {X} weeks left.")
+life_in_weeks(30)   
+    
