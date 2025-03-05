@@ -11,7 +11,18 @@ def encrypt(original_text,shift_amount):
         shifted_position = shifted_position % len(alphabet)
         cipher_text += alphabet[shifted_position]
     
-    print(f"encoded result {cipher_text}")
+    print(f"decoded result: {cipher_text}")
     
 encrypt(original_text = Text, shift_amount = Number)   
+
+def decrypt(original_text,shift_amount):
+    decoded_text = ""
+    for n in original_text:
+        shifted_position = alphabet.index(n) - shift_amount
+        shifted_position = shifted_position % len(alphabet)
+        decoded_text += alphabet[shifted_position]
+    
+        
+    print(f"encoded result :{decoded_text}")    
+decrypt(original_text = Text, shift_amount = Number)
   
