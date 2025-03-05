@@ -27,4 +27,26 @@ def decrypt(original_text,shift_amount):
 decrypt(original_text = Text, shift_amount = Number)
 
 version 2 : with less lines.
-  
+alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+def cipher(original_text, shift_amount, encode_or_decode):
+    cipher_text = ""
+    
+    if encode_or_decode == "decode":
+        shift_amount *= -1  # Reverse the shift if decoding
+    
+    for i in original_text:
+        if i not in alphabet:
+            cipher_text += i  # If the character is not in the alphabet (e.g., spaces, punctuation), add it directly
+        else:
+            shifted_position = alphabet.index(i) + shift_amount
+            shifted_position = shifted_position % len(alphabet)  # Ensure we loop around if we go past the alphabet
+            cipher_text += alphabet[shifted_position]
+    
+    print(f"Output result {encode_or_decode}d: {cipher_text}")  # Properly format the string to show 'encoded' or 'decoded'
+
+should_continue = True
+while should_continue:
+    directions = input("Type 'encode' for encrypt and type 'decode' to decrypt\n").lower()
+    Text = input("Enter the message \n").lower()
+    Number = int(input("Enter the number:\n"))  
