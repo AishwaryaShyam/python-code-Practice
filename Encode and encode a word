@@ -25,4 +25,6 @@ def decrypt(original_text,shift_amount):
         
     print(f"encoded result :{decoded_text}")    
 decrypt(original_text = Text, shift_amount = Number)
+
+version 2 : with less lines.
   
