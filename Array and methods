@@ -1,0 +1,63 @@
+from array import *
+#Create an array and traverse
+
+print("step 1") 
+my_array = array("i",[1,2,3,4,5,6,7,8,9])
+for i in my_array:
+    print(i)
+ 
+first_element = my_array[0]
+last_element = my_array[-1]
+
+# for i in range(len(my_array)):
+# if i >= (len(my_array)):
+#   return(array not found)
+# else:
+#   print(my_array[])
+
+print("step 2") 
+#Access an element through index
+print(my_array[8])
+
+print("step 3")
+#Append an element in the array 
+my_array.append(10)
+print(my_array)
+#insert value in an arraya using insert()method
+
+print("step 4") 
+my_array.insert(5,90)
+print(my_array)
+#extend an array 
+
+print("step 5")
+#create a new array for extension 
+myarray1 = array('i',[11,12,13,14])
+my_array.extend(myarray1)
+print(my_array)
+
+print("step 6")
+#using fromlist()
+templist = [21,31,41]
+my_array.fromlist(templist)
+print(my_array)
+
+print("step 7")
+#use remove method 
+my_array.remove(6) 
+my_array.remove(my_array[0]) #using index
+print(my_array)
+
+print("step 8")
+#use pop method - This is used to remove the last element 
+my_array.pop()
+print(my_array)
+
+print("step 9")
+#using reverse method 
+my_array.reverse()
+print(my_array)
+
+print("step 10")
+#using index method 
+print(my_array.index(2))
