@@ -61,3 +61,22 @@ print(my_array)
 print("step 10")
 #using index method 
 print(my_array.index(2))
+
+#using buffer_info()
+print("step 11")
+my_array.buffer_info()
+print(my_array)
+
+print("step 12")
+#checking the count 
+print(my_array.count(5))
+
+print("step 13")
+#converting array to the list 
+  print(my_array.tolist())
+  #how to slice an element from the array
+
+  print("step 14")
+  print(my_array[3:9])
+
+
