@@ -7,3 +7,15 @@ while a > 0:
     a // 10 
     
 print("The Given number is {} and Reverse is {}".format(temp, reverse))
+
+
+(or)
+
+def reversed(x):
+  y=0
+  while x > 0:
+    digit = x % 10
+    y = y * 10 + digit
+    x = x // 10 
+  return y
+print(reversed(456)) 
